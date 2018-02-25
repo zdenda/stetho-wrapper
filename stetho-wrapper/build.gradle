@@ -1,17 +1,21 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.zdenda'
+
 
 android {
 
     compileSdkVersion 27
-    //publishNonDefault true
+    publishNonDefault true
     //defaultPublishConfig "debug"
 
     defaultConfig {
         //noinspection MinSdkTooLow - Stetho's min SDK is also 9
         minSdkVersion 9
         targetSdkVersion 27
-        versionCode 3
-        versionName "0.0.3"
+        versionCode 4
+        versionName "0.0.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
